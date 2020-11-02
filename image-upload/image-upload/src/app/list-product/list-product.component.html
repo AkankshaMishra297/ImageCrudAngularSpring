@@ -1,0 +1,33 @@
+
+
+<div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr class="bg-primary">
+          <th>Image</th>
+          <th>Name</th>
+          <th>Type</th>
+          <th>ProductType</th>
+          <th>ProductSubType</th>
+          <th>Prize</th>
+          <th>Description</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let image of images">
+          
+          <td style="text-align:center;vertical-align: middle;">
+              <img [src]="getBase64ImageSrc(image.picByte)" height="150px" width="150x">
+          </td>
+          <td style="text-align:center;vertical-align: middle;">{{image.name}}</td>
+          <td style="text-align:center;vertical-align: middle;">{{image.type}}</td>
+          <td style="text-align:center;vertical-align: middle;">{{image.imgType}}</td>
+          <td style="text-align:center;vertical-align: middle;">{{image.imgSubType}}</td>
+          <td style="text-align:center;vertical-align: middle;">{{image.prize}}</td>
+          <td style="text-align:center;vertical-align: middle;">{{image.desc}}</td>
+          <td style="text-align:center;vertical-align: middle;"> <button class="btn btn-primary" (click)="editButtonClick()">Edit</button> </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

@@ -1,0 +1,8 @@
+com\akm\model\ImageSubType.class
+com\akm\controller\ImageUploadController.class
+com\akm\db\ImageTypeRepository.class
+com\akm\model\ImageType.class
+com\akm\db\ImageRepository.class
+com\akm\ImageUploadApplication.class
+com\akm\model\ImageModel.class
+com\akm\db\ImageSubTypeRepository.class
